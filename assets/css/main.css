@@ -13,35 +13,31 @@
 }
 
 @layer base {
-    .home__list-of-subject > a {
-        @apply w-full py-3 pl-1 flex items-center hover:bg-base-300 rounded-md
-    }
-
     body {
         background-color: #f9f9f9;
+    }
+
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #e2e2e2 #bbbbbb;
+    }
+    
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    *::-webkit-scrollbar-track {
+        background: #e2e2e2;
+    }
+    
+    *::-webkit-scrollbar-thumb {
+        background-color: #bbbbbb;
+        border-radius: 0;
+        border: 0px solid #e2e2e2;
     }
 }
 
 @layer components {
     
-}
-
-* {
-    scrollbar-width: thin;
-    scrollbar-color: #e2e2e2 #bbbbbb;
-}
-
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-    width: 8px;
-}
-
-*::-webkit-scrollbar-track {
-    background: #e2e2e2;
-}
-
-*::-webkit-scrollbar-thumb {
-    background-color: #bbbbbb;
-    border-radius: 0;
-    border: 0px solid #e2e2e2;
 }

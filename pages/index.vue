@@ -14,42 +14,23 @@
         <div class="con">
             <h1 class="text-4xl font-bold mb-4 pl-4">Kimia</h1>
             <div class="grid grid-cols-3 gap-8 text-lg">
-                <div class="p-4 rounded-lg bg-gray-50 shadow-lg">
-                    <ul class="home__list-of-subject">
-                        <a href="#"><li>Sistem dan Sifat Periodik</li></a>
-                        <a href="#"><li>Struktur Atom</li></a>
-                        <a href="#"><li>Ikatan Kimia</li></a>
-                        <a href="#"><li>Larutan Elektrolit dan non Elektrolit</li></a>
-                        <a href="#"><li>Reaksi Redoks</li></a>
-                        <a href="#"><li>Tata Senyawa dan persamaan reaksi</li></a>
-                        <a href="#"><li>Stoikiometri</li></a>
-                    </ul>
+                <!-- // * Kelas 10 -->
+                <div class="p-4 rounded-lg bg-white shadow-lg">
+                    <div class="flex flex-col gap-2">
+                        <NuxtLink v-for="article in kimia10" :key="article.slug" :to="'/kimia/' + article.slug">{{ article.title }}</NuxtLink>
+                    </div>
                 </div>
-                <div class="p-4 rounded-lg bg-gray-50 shadow-lg">
-                    <ul class="home__list-of-subject">
-                        <a href="#"><li>Termokimia</li></a>
-                        <a href="#"><li>Laju Reaksi</li></a>
-                        <a href="#"><li>Kesetimbangan Kimia</li></a>
-                        <a href="#"><li>Larutan Asam Basa</li></a>
-                        <a href="#"><li>Titrasi Asam Basa</li></a>
-                        <a href="#"><li>Larutan Buffer</li></a>
-                        <a href="#"><li>Hidrolisis Garam</li></a>
-                        <a href="#"><li>Kelarutan Garam (KSP)</li></a>
-                    </ul>
+                <!-- // * Kelas 11 -->
+                <div class="p-4 rounded-lg bg-white shadow-lg">
+                    <div class="flex flex-col gap-2">
+                        <NuxtLink v-for="article in kimia11" :key="article.slug" :to="'/kimia/' + article.slug">{{ article.title }}</NuxtLink>
+                    </div>
                 </div>
-                <div class="p-4 rounded-lg bg-gray-50 shadow-lg">
-                    <ul class="home__list-of-subject">
-                        <a href="#"><li>Sifat Koligatif Larutan</li></a>
-                        <a href="#"><li>Redoks dan Elektrokimi</li></a>
-                        <a href="#"><li>Reaksi Elektrolisis dan Hukum Faraday</li></a>
-                        <a href="#"><li>Unsur-Unsur Utama</li></a>
-                        <a href="#"><li>Unsur Transisi</li></a>
-                        <a href="#"><li>Unsur Radioaktif</li></a>
-                        <a href="#"><li>Senyawa Karbon</li></a>
-                        <a href="#"><li>Benzena</li></a>
-                        <a href="#"><li>Makromolekul</li></a>
-                        <a href="#"><li>Biomolekul</li></a>
-                    </ul>
+                <!-- // * Kelas 12 -->
+                <div class="p-4 rounded-lg bg-white shadow-lg">
+                    <div class="flex flex-col gap-2">
+                        <NuxtLink v-for="article in kimia12" :key="article.slug" :to="'/kimia/' + article.slug">{{ article.title }}</NuxtLink>
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,50 +38,38 @@
 
     <section id="blog" class="section">
         <div class="grid grid-cols-3 gap-8 con">
-            <div class="card shadow-lg rounded-lg">
+            <div class="card shadow-lg rounded-lg" v-for="post in blogs" :key="post.slug">
                 <figure>
                     <img src="https://picsum.photos/id/1005/400/250">
                 </figure>
                 <div class="card-body bg-gray-50">
-                    <h2 class="card-title">Banyak Teknik belajar, mana yang paling bagus?</h2>
-                    <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus veritatis sed molestiae voluptates incidunt iure sapiente.</p>
+                    <h2 class="card-title">{{ post.title }}</h2>
+                    <p>{{ post.description }}</p>
                     <div class="card-actions">
-                        <button class="btn btn-primary">More info</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card shadow-lg rounded-lg">
-                <figure>
-                    <img src="https://picsum.photos/id/1005/400/250">
-                </figure>
-                <div class="card-body bg-gray-50">
-                    <h2 class="card-title">Blooms Taxonomy: teknik belajar solusi HOTS</h2>
-                    <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus veritatis sed molestiae voluptates incidunt iure sapiente.</p>
-                    <div class="card-actions">
-                        <button class="btn btn-primary">More info</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card shadow-lg rounded-lg">
-                <figure>
-                    <img src="https://picsum.photos/id/1005/400/250">
-                </figure>
-                <div class="card-body bg-gray-50">
-                    <h2 class="card-title">Memunculkan motivasi belajar dalam diri Anda</h2>
-                    <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus veritatis sed molestiae voluptates incidunt iure sapiente.</p>
-                    <div class="card-actions">
-                        <button class="btn btn-primary">More info</button>
+                        <NuxtLink class="btn btn-primary" :to="'/blog/' + post.slug">Baca Selengkapnya</NuxtLink>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
   </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
-  layout: 'default',
+    name: 'IndexPage',
+    layout: 'default',
+    async asyncData ({ $content, app, params, error }) {
+        const blogs = await $content('blog').sortBy('createdAt', 'desc').fetch()
+        const kimia10 = await $content('kimia').where({ kelas: 10 }).fetch()
+        const kimia11 = await $content('kimia').where({ kelas: 11 }).fetch()
+        const kimia12 = await $content('kimia').where({ kelas: 12 }).fetch()
+
+      return {
+        kimia10, kimia11, kimia12, blogs
+      }
+    },
 }
 </script>

@@ -13,8 +13,8 @@
         </NuxtLink>
 
         <div class="items-stretch hidden lg:flex">
-          <NuxtLink to="/learn" class="btn btn-ghost btn-sm rounded-btn">
-                  Learn
+          <NuxtLink to="/kimia" class="btn btn-ghost btn-sm rounded-btn">
+                  Kimia
           </NuxtLink> 
           <NuxtLink to="/blog" class="btn btn-ghost btn-sm rounded-btn">
                   Blog
