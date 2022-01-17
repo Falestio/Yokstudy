@@ -6,7 +6,7 @@ description: ini adalah blog  yang ketiga, akan membahas tentang hal yang sangat
 
 <nuxt-link to="/">Nuxt Link to Home</nuxt-link>
 
-# Lorem ipsum
+## Lorem ipsum
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a adipisci quos natus rem, doloremque est minima voluptatibus veniam!
 
@@ -14,10 +14,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a 
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a adipisci quos natus rem, doloremque est minima voluptatibus veniam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a adipisci quos natus rem, doloremque est minima voluptatibus veniam!
 
-### consectetur &amp; adipisicing
+## consectetur &amp; adipisicing
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a adipisci quos natus rem, doloremque est minima voluptatibus veniam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a adipisci quos natus rem, doloremque est minima voluptatibus veniam!
 
-#### elit
+## elit
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a adipisci quos natus rem, doloremque est minima voluptatibus veniam!
 
@@ -25,5 +25,5 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a 
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a adipisci quos natus rem, doloremque est minima voluptatibus veniam!
 
-##### elit
+## elit
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a adipisci quos natus rem, doloremque est minima voluptatibus veniam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a adipisci quos natus rem, doloremque est minima voluptatibus veniam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a adipisci quos natus rem, doloremque est minima voluptatibus veniam!

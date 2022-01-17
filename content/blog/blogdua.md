@@ -3,7 +3,7 @@ title: contoh blog dua
 description: untuk mengetes functionality dari content module
 ---
 
-# Lorem ipsum
+## Lorem ipsum
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a adipisci quos natus rem, doloremque est minima voluptatibus veniam!
 
@@ -11,10 +11,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a 
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a adipisci quos natus rem, doloremque est minima voluptatibus veniam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a adipisci quos natus rem, doloremque est minima voluptatibus veniam!
 
-### consectetur &amp; adipisicing
+## consectetur &amp; adipisicing
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a adipisci quos natus rem, doloremque est minima voluptatibus veniam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a adipisci quos natus rem, doloremque est minima voluptatibus veniam!
 
-#### elit
+## elit
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a adipisci quos natus rem, doloremque est minima voluptatibus veniam!
 
@@ -22,5 +22,5 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a 
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a adipisci quos natus rem, doloremque est minima voluptatibus veniam!
 
-##### elit
+## elit
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a adipisci quos natus rem, doloremque est minima voluptatibus veniam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a adipisci quos natus rem, doloremque est minima voluptatibus veniam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa a adipisci quos natus rem, doloremque est minima voluptatibus veniam!
