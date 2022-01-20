@@ -17,19 +17,25 @@
                 <!-- // * Kelas 10 -->
                 <div class="p-4 rounded-lg bg-white shadow-lg">
                     <div class="flex flex-col gap-2">
-                        <NuxtLink v-for="article in kimia10" :key="article.slug" :to="'/kimia/' + article.slug">{{ article.title }}</NuxtLink>
+                        <h3 class="text-lg font-bold p-2">Kelas10</h3>
+                        <NuxtLink class="p-2 hover:bg-base-300 rounded-sm"
+                         v-for="article in kimia10" :key="article.slug" :to="'/kimia/' + article.slug">{{ article.title }}</NuxtLink>
                     </div>
                 </div>
                 <!-- // * Kelas 11 -->
                 <div class="p-4 rounded-lg bg-white shadow-lg">
                     <div class="flex flex-col gap-2">
-                        <NuxtLink v-for="article in kimia11" :key="article.slug" :to="'/kimia/' + article.slug">{{ article.title }}</NuxtLink>
+                        <h3 class="text-lg font-bold p-2">Kelas11</h3>
+                        <NuxtLink class="p-2 hover:bg-base-300 rounded-sm"
+                        v-for="article in kimia11" :key="article.slug" :to="'/kimia/' + article.slug">{{ article.title }}</NuxtLink>
                     </div>
                 </div>
                 <!-- // * Kelas 12 -->
                 <div class="p-4 rounded-lg bg-white shadow-lg">
+                    <h3 class="text-lg font-bold p-2">Kelas12</h3>
                     <div class="flex flex-col gap-2">
-                        <NuxtLink v-for="article in kimia12" :key="article.slug" :to="'/kimia/' + article.slug">{{ article.title }}</NuxtLink>
+                        <NuxtLink class="p-2 hover:bg-base-300 rounded-sm"
+                        v-for="article in kimia12" :key="article.slug" :to="'/kimia/' + article.slug">{{ article.title }}</NuxtLink>
                     </div>
                 </div>
             </div>
@@ -38,11 +44,11 @@
 
     <section id="blog" class="section">
         <div class="grid grid-cols-3 gap-8 con">
-            <div class="card shadow-lg rounded-lg" v-for="post in blogs" :key="post.slug">
+            <div class="card shadow-lg rounded-lg border-2 border-gray-100" v-for="post in blogs" :key="post.slug">
                 <figure>
                     <img src="https://picsum.photos/id/1005/400/250">
                 </figure>
-                <div class="card-body bg-gray-50">
+                <div class="card-body bg-gray-100">
                     <h2 class="card-title">{{ post.title }}</h2>
                     <p>{{ post.description }}</p>
                     <div class="card-actions">

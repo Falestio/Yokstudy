@@ -117,6 +117,3 @@ memebentuk senyawa memerlukan energi sehingga entalpi pembentukan standar berben
 
 ## perubahan entalpi penguraian standar (<>Hd)
 perubahan entalpi yang diperlukan atau dilepaskan pada penguraian 1 mol senyawa dari unsur-unsur nya
-
-
-## 

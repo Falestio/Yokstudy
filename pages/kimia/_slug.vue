@@ -31,20 +31,22 @@
 
 <script>
 export default {
-    async asyncData ({ $content, app, params, error }) {
-      const article = await $content('kimia/' + params.slug).fetch()
-      const kimia10 = await $content('kimia').where({ kelas: 10 }).fetch()
-      const kimia11 = await $content('kimia').where({ kelas: 11 }).fetch()
-      const kimia12 = await $content('kimia').where({ kelas: 12 }).fetch()
+  layout: 'NoFooter',
 
-      if (!article) {
-        return error({ statusCode: 404, message: 'Article not found' })
-      }
+  async asyncData ({ $content, app, params, error }) {
+    const article = await $content('kimia/' + params.slug).fetch()
+    const kimia10 = await $content('kimia').where({ kelas: 10 }).fetch()
+    const kimia11 = await $content('kimia').where({ kelas: 11 }).fetch()
+    const kimia12 = await $content('kimia').where({ kelas: 12 }).fetch()
 
-      return {
-        article, kimia10, kimia11, kimia12
-      }
+    if (!article) {
+      return error({ statusCode: 404, message: 'Article not found' })
     }
+
+    return {
+      article, kimia10, kimia11, kimia12
+    }
+  }
     
   }
 </script>
@@ -52,5 +54,9 @@ export default {
 <style scoped>
 #learn-article {
   max-width: 980px;
+}
+
+.nuxt-link-exact-active {
+    color: green;
 }
 </style>

@@ -13,14 +13,34 @@
     <div class="flex justify-between relative con mb-12">
         <!-- * TOC -->
         <div class="w-1/5 sticky top-0" id="blog-toc">
-            <div class="border-r-2 border-gray-200 sticky top-8">
-                <h3 class="text-md font-bold capitalize pl-2">Daftar konten</h3>
-                <ul class="ml-2">
-                    <li v-for="link in article.toc" :key="link.id">
-                        <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
-                    </li>
-                </ul>
-            </div>
+            <nav class="sticky top-8">
+                <div class="border-r-2 border-gray-200">
+                    <h3 class="text-md font-bold capitalize pl-2">Daftar konten</h3>
+                    <ul class="ml-2">
+                        <li
+                            @click="tableOfContentsHeadingClick(link)"
+                            :class="{
+                                'pl-4': link.depth === 3
+                            }"
+                            class="toc-list"
+                            v-for="link of article.toc"
+                            :key="link.id"
+                            >
+                            <a
+                                :class="{
+                                'text-primary hover:text-primary':
+                                    link.id === currentlyActiveToc,
+                                'text-black hover:gray-900': link.id !== currentlyActiveToc
+                                }"
+                                role="button"
+                                class="transition-colors duration-75 text-base mb-2 block"
+                                :href="`#${link.id}`"
+                                >{{ link.text }}</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
 
         <!-- * Article -->
@@ -48,17 +68,52 @@
 
 <script>
 export default {
-  async asyncData ({ $content, app, params, error }) {
-    // const path = params.slug
-    const article = await $content('blog/' + params.post).fetch()
-    if (!article) {
-      return error({ statusCode: 404, message: 'Article not found' })
-    } 
 
+data() {
     return {
-      article
-    }
-  }
+        currentlyActiveToc: "",
+        observer: null,
+        observerOptions: {
+            root: this.$refs.nuxtContent,
+            threshold: 0.5,
+            },
+        }
+    },
+    mounted() {
+        this.observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+            if (entry.isIntersecting) {
+                this.currentlyActiveToc = id;
+            }
+        })
+        }, this.observerOptions);
+
+        // Track all sections that have an `id` applied
+        document.querySelectorAll('.nuxt-content h2[id], .nuxt-content h3[id]').forEach((section) => {
+            this.observer.observe(section);
+        })
+    },
+    beforeDestroy() {
+        this.observer.disconnect();
+    },
+    async asyncData ({ $content, app, params, error }) {
+        // const path = params.slug
+        const article = await $content('blog/' + params.post).fetch()
+        if (!article) {
+            return error({ statusCode: 404, message: 'Article not found' })
+        } 
+
+        return {
+            article
+        }
+    },
+    methods: {
+    tableOfContentsHeadingClick(link) {
+      this.currentlyActiveToc = link.id;
+    },
+  },
+
 }
 
 </script>

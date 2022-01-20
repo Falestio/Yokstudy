@@ -1,19 +1,16 @@
 <template>
-    <div class="flex flex-col gap-8 mt-4">
-
-        <div class="card lg:card-side card-bordered"  v-for="article in articles" :key="article.slug">
-            <figure>
-                <img src="https://picsum.photos/id/1005/400/250">
-            </figure> 
-            <div class="card-body">
-                <h2 class="card-title">{{ article.title }}</h2> 
-                <p>{{ article.description }}</p> 
+    <div class="flex flex-col gap-8 my-8 con">
+        <NuxtLink v-for="article in articles" :key="article.slug" :to="'/blog/' + articles.slug">
+            <div class="card lg:card-side bg-white border-2 border-gray-200 w-10/12 mx-auto rounded-md">
+                <div class="card-body">
+                    <h2 class="text-4xl font-bold mb-4">{{ article.title }}</h2> 
+                    <p>{{ article.description }}</p> 
+                </div>
+                <figure>
+                    <img src="https://picsum.photos/id/1005/400/250">
+                </figure> 
             </div>
-            <div class="card-actions">
-                <button class="btn btn-primary">Get Started</button> 
-                <button class="btn btn-ghost">More info</button>   
-            </div>
-        </div>
+        </NuxtLink>
     </div> 
 </template>
 
