@@ -114,6 +114,62 @@ contoh soal
 ## perubahan entalpi pembentukan standar (<>Hf)
 perubahan entalpi yang diperlukan atau dilepaskan pada pembentukan 1 mol senyawa dari unsur-unsur nya
 memebentuk senyawa memerlukan energi sehingga entalpi pembentukan standar berbentuk negatif, yang menggambarkan bahwa reaksi ini mengurangi kalor dar lingkungan
+Eksoterm
 
 ## perubahan entalpi penguraian standar (<>Hd)
 perubahan entalpi yang diperlukan atau dilepaskan pada penguraian 1 mol senyawa dari unsur-unsur nya
+dalam keadaan standar
+Endoterm
+
+## perubahan entalpi pembakaran standar
+perubahan entalpi yan diperlikan atau dilepaskan pada pembakaran sempurna 1 mol zat pada keadaan standar
+Eksoterm
+
+## perubahan entalpi netralisasi standar
+## perubahan entalpi penguapan standar
+## perubahan entalpi peleburan dasar
+## perubahan entalpi sublimasi standar
+
+# Penentuan Entalpi Reaski Dengan Kalorimeter
+Konsep: dalam eksperimen kalor yang dihasilkan oleh reaksi (sistem) samadengan kalor yang diterima oleh air dalam kalori meter
+
+cara menghitung besar kalor yang dihasilkan oleh/diserap dari reaksi dapat dihitung dengan persamaan
+
+q = m c <>t 
+atau 
+q = C <>t
+
+q = jumlah kalor
+m = massa (g)
+c = Kalor jenis air/larutan
+
+C = kapasitas kalor kalorimeter
+<>T = perubahan suhu
+
+qreaksi + qlarutan + qkalorimeter
+qreaksi = - (qlarutan + qkalorimeter)
+qreaksi = -(mc<>T + C<>T)
+
+menghitung entalpi <>H = -q/mol
+
+suhu naik = eksoterm
+suhu turun = endoterm
+
+1.  pada pelarutan 2 gram kristal NaOH (Mr=40) dalam 50ml air terjadi kenaikan
+    suhu dari 27C menjadi   32C jika kalor jenis larutan 4,2 J/C, entalpi pelarutan NaOH .. Kj/mol
+
+    jawab:
+    <>H = -q/mol = mc<>T/gr/Mr = masuk rumus = -21000 j = -21Kj/mol
+    jadi reaksi pelarutan 2 gram kristal NaOH dalam 50ml air mengeluarkan 21Kj/mol
+
+2.  Pada suhu 25*C direaksikan 50mL larutan HCl 0.4M dengan 50ml larutan NaOH 0.4 M dalam kalorimeter
+    ternyata suhu air di kalorimeter naik menjadi 28*
+    jika P = 1gr/mL dan C = 4.2, entalpi penetralan
+
+    jawab:
+    HCl + NaOH -> NaCl + H2O
+    50ml 0.4 50ml 0.4
+    <>T = 3
+    m = 100ml
+
+    mc<>T/mol = masuk rumus = (mol yang dipakai adalah mol yang terkecil) = 
