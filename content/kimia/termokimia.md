@@ -173,3 +173,38 @@ suhu turun = endoterm
     m = 100ml
 
     mc<>T/mol = masuk rumus = (mol yang dipakai adalah mol yang terkecil) = 
+
+# Penentuan entalpi reaksi berdasarkan entalpi pembentukan standar
+
+Dalam reaksi pembentukan: 
+- koefisien yang dibentuk -> 1 mol
+- terbentuk dari unsur unsur nya
+
+jika pada persamaan reaksi semua <>Hf zat diketahui maka <>H reaksi dapat dihitun dengan rumus
+
+<>H = <>Hf produk - <>Hf reaktan
+<>H = Ka - Ki
+
+contoh soal
+
+1.  pada keadaan standar terjadi reaksi CH4 + NH3 -> HCN + 3H2 <>H = 260 Kg/mol
+    diketahui <>Hf CH4 = -75, <>H NH3 = -46
+    hitunglah <>Hf HCN
+
+    jawab:
+    <>H = (<>Hf HCN) - (<>Hf CH4 + <>Hf NH3)
+
+2.  pembakaran 1 gram asitelina C2H2 Mr=26 menghasilkan kalor 50 kj, jika entalpi 
+    pembentukan CO2 dan H2O masing masing x dan y hitung entalpi pembentukan asitilena
+
+# Penentuan perubahan ental[i reaksi berdasarkan energi ikatan
+
+Energi ikatan : energi yang diperlukan untuk memutuskan dalm 1 mol suatu 
+senyawa berwujud gas pada keadaan standar menjadi atom atom penyusunnya
+
+pengertian energi atomisasi
+pengertian energi disasosiasi ikatan
+penertian energi rata rata ikatan
+
+rumus 
+<>H = <>H Ki - <>H Ka
