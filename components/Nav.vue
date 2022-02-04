@@ -1,12 +1,12 @@
 <template>
   <div>
-      <div class="navbar py-4 shadow-sm border-b-2 bg-white">
+      <div class="navbar py-4 shadow-sm bg-white">
   
       <div class="flex-1 px-2 mx-2">
         <NuxtLink to="/"> 
           <div class="flex px-2 mx-2">
             <img src="@/assets/svg/yokstudy-book.svg" alt="logo" class="w-10 h-auto">
-            <span class="text-4xl ml-2 mt-1">
+            <span class="text-4xl ml-2 mt-1 font-medium">
                   Yokstudy 
             </span>
           </div> 
@@ -25,7 +25,7 @@
       <div class="flex-none">
           <div class="py-2 px-2 border-gray-200 border-2 rounded-md flex justify-center items-center gap-4 
                       cursor-pointer hover:bg-base-200 mr-8">
-            <i>O</i>
+            <i class="uil uil-search"></i>
             <p>Cari Apa saja..</p>
             <kbd class="kbd kbd-xs">Ctrl + K</kbd>
           </div>
