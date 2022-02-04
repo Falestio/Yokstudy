@@ -19,10 +19,6 @@
         background-color: #f9f9f9;
     }
 
-    p {
-        font-size: 20px;
-    }
-
     * {
         scrollbar-width: thin;
         scrollbar-color: #e2e2e2 #bbbbbb;
@@ -46,6 +42,41 @@
 
 @layer components {
 
+    .nuxt-content > * {
+        @apply my-4
+    }
+
+    .nuxt-content h1 {
+        @apply text-5xl font-bold
+    }
+
+    .nuxt-content h2 {
+        @apply text-3xl font-bold
+    }
+
+    .nuxt-content h3 {
+        @apply text-2xl font-bold
+    }
+
+    .nuxt-content p {
+        font-size: 22px;
+    }
+
+    .nuxt-content table {
+        width: 100%;
+    }
+
+    .nuxt-content table, th, td {
+        border: 2px solid #cacaca;
+    }
+
+    .nuxt-content th,td {
+        padding: 10px;
+    }
+
+    .nuxt-content td {
+        background-color: #fff;
+    }
 }
 
 .nuxt-link-exact-active {
