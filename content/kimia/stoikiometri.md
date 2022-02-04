@@ -25,7 +25,6 @@ definisi scientific
 jadi, misalnya jika ada 1 mol emas, maka jumlah atom dari emas tersebut sama dengan jumlah atom yang ada pada 12 gram unsur Carbon-12
 
 
-
 ## tapi kenapa harus 6.022 x 10^23? (Angka avogadro)
 
 6.022 x 10^23 adalah angka avogadro, sesuai namanya angka ini dipropose oleh ilmuan bernama avogadro,

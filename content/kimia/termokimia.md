@@ -10,9 +10,18 @@ cabang ilmu kimia yang mempelajari perubahan kalor atau energi yang menyertai su
 
 energi dapat mengalami perpindahan dari sistem ke lingkungan dan sebaliknya
 
+| Tables   |      Are      |  Cool |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
+
 ## sistem dan lingkunan
 sistem adalah segala hal yang diteliti perubahan energinya
 lingkungan adalah segala sesuat diluar sistem 
+
+<dropdown title="is this a bug" desc="this is a dropdown for when i use the cheat in the description yang akan menjadikan haltersebut lupan dan tidak dikenal"></dropdown>
+
 
 misal air teh panas dalam gelas 
 air teh panas adalah sistem
