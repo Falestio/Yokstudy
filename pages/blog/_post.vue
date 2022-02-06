@@ -28,8 +28,8 @@
                             >
                             <a
                                 :class="{
-                                'text-primary hover:text-primary':
-                                    link.id === currentlyActiveToc,
+                                'text-green-500 hover:text-green-600'
+                                :link.id === currentlyActiveToc,
                                 'text-black hover:gray-900': link.id !== currentlyActiveToc
                                 }"
                                 role="button"
@@ -119,5 +119,7 @@ data() {
 </script>
 
 <style>
-
+    .nuxt-link-exact-active {
+        color: #f00;
+    }
 </style>
