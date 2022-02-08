@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'yokstudy-nuxt',
+    title: 'Yokstudy',
     htmlAttrs: {
       lang: 'en'
     },
@@ -17,6 +17,9 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://unicons.iconscout.com/release/v4.0.0/css/line.css'}
+    ],
+    script: [
+      // { hid: 'google', src: 'https://cse.google.com/cse.js?cx=dcbe7c69fdaf8b8de', defer: true, async: true }
     ]
   },
 
@@ -31,6 +34,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/vue-instantsearch',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -65,5 +69,7 @@ export default {
         autoprefixer: {},
       },
     },
+
+    transpile: ['vue-instantsearch', 'instantsearch.js/es'],
   }
 }

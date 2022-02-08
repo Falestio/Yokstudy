@@ -22,14 +22,7 @@
         </div>
 
       </div> 
-      <div class="flex-none">
-          <div class="py-2 px-2 border-gray-200 border-2 rounded-md flex justify-center items-center gap-4 
-                      cursor-pointer hover:bg-base-200 mr-8">
-            <i class="uil uil-search"></i>
-            <p>Cari Apa saja..</p>
-            <kbd class="kbd kbd-xs">Ctrl + K</kbd>
-          </div>
-      </div>
+      <NavSearch class="h-20"/>
     </div>
   </div>
 </template>
@@ -40,6 +33,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.gsc-input {
+  padding: 0;
+}
 </style>

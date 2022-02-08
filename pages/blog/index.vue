@@ -29,3 +29,9 @@ export default {
     }
     }
 </script>
+
+<style scoped>
+.nuxt-link-exact-active {
+    color: green;
+}
+</style>
