@@ -37,8 +37,8 @@
 
     <section id="content-list" class="section">
         <div class="con">
-            <h1 class="text-4xl font-bold mb-4 pl-4">Kimia</h1>
-            <div class="grid grid-cols-3 gap-8 text-lg">
+            <h2 class="text-4xl font-bold mb-4 pl-4">Kimia</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3  gap-8 text-lg">
                 <!-- // * Kelas 10 -->
                 <div class="p-4 rounded-lg bg-white shadow-lg">
                     <div class="flex flex-col gap-2">
@@ -68,18 +68,21 @@
     </section>
 
     <section id="blog" class="section">
-        <div class="grid grid-cols-3 gap-8 con">
-            <div class="card shadow-lg rounded-lg border-2 border-gray-100" v-for="post in blogs" :key="post.slug">
-                <figure>
-                    <img src="https://picsum.photos/id/1005/400/250">
-                </figure>
-                <div class="card-body bg-white flex flex-col justify-between">
-                    <div>
-                        <h2 class="card-title">{{ post.title }}</h2>
-                        <p>{{ post.description }}</p>
-                    </div>
-                    <div class="card-actions">
-                        <NuxtLink class="btn bg-green-500 hover:bg-green-600" :to="'/blog/' + post.slug">Baca Selengkapnya</NuxtLink>
+        <div class="con">
+            <h2 class="text-4xl font-bold mb-4 pl-4">Blog</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 con">
+                <div class="card shadow-lg rounded-lg border-2 border-gray-100" v-for="post in blogs" :key="post.slug">
+                    <figure>
+                        <img src="https://picsum.photos/id/1005/400/250">
+                    </figure>
+                    <div class="card-body bg-white flex flex-col justify-between">
+                        <div>
+                            <h2 class="card-title">{{ post.title }}</h2>
+                            <p>{{ post.description }}</p>
+                        </div>
+                        <div class="card-actions">
+                            <NuxtLink class="btn bg-green-500 hover:bg-green-600" :to="'/blog/' + post.slug">Baca Selengkapnya</NuxtLink>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 <template>
   <div>
-      <div class="navbar py-4 shadow-sm bg-white">
+    <div class="navbar py-4 shadow-sm bg-white">
   
       <div class="flex-1 px-2 mx-2">
         <NuxtLink to="/"> 
@@ -22,7 +22,7 @@
         </div>
 
       </div> 
-      <NavSearch class="h-20"/>
+      <NavSearchAlgolia/>
     </div>
   </div>
 </template>
@@ -34,7 +34,5 @@ export default {
 </script>
 
 <style scoped>
-.gsc-input {
-  padding: 0;
-}
+
 </style>

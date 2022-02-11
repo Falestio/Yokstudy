@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="gcse-search" v-if="isSearchLoaded"></div>
+        <div class="gcse-search p-10" v-if="isSearchLoaded"></div>
     </div>
 </template>
 
@@ -31,13 +31,7 @@ export default {
 </script>
 
 <style scoped>
-    .nuxt-content table, th, td {
-        border: none !important;
-    }
 
-    .nuxt-content th,td {
-        padding: 0 !important;
-    }
 
 
 
