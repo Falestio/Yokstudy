@@ -70,7 +70,7 @@
     <section id="blog" class="section">
         <div class="con">
             <h2 class="text-4xl font-bold mb-4 pl-4">Blog</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 con">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="card shadow-lg rounded-lg border-2 border-gray-100" v-for="post in blogs" :key="post.slug">
                     <figure>
                         <img src="https://picsum.photos/id/1005/400/250">

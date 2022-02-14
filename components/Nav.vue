@@ -21,8 +21,27 @@
           </NuxtLink>
         </div>
 
-      </div> 
+      </div>
+      
       <NavSearchAlgolia/>
+
+      <div class="dropdown dropdown-end lg:hidden">
+        <div tabindex="0" class="m-1"><i class="uil uil-bars icon"></i></div> 
+        <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
+          <li>
+            <NuxtLink to="/blog" class="btn btn-ghost btn-sm rounded-btn">
+                    Blog
+            </NuxtLink> 
+          </li> 
+          <li>
+            <NuxtLink to="/about" class="btn btn-ghost btn-sm rounded-btn">
+                    About
+            </NuxtLink>
+          </li>
+        </ul>
+      </div>
+
+
     </div>
   </div>
 </template>

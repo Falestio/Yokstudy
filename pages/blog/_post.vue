@@ -10,9 +10,9 @@
     </div>
 
     <!-- * Content -->
-    <div class="flex justify-between relative con mb-12">
+    <div class="flex flex-col lg:flex-row w-full md:w-auto justify-between relative con mb-12">
         <!-- * TOC -->
-        <div class="w-1/5 sticky top-0" id="blog-toc">
+        <div class="w-1/5 sticky top-0 hidden lg:block" id="blog-toc">
             <nav class="sticky top-8">
                 <div class="border-r-2 border-gray-200">
                     <h3 class="text-md font-bold capitalize pl-2">Daftar konten</h3>
@@ -44,12 +44,12 @@
         </div>
 
         <!-- * Article -->
-        <article class="w-1/2" id="blog-article">
+        <article class="lg:w-1/2 w-full" id="blog-article">
             <nuxt-content :document="article"/>
         </article>
 
         <!-- * Sidebar -->
-        <aside class="w-1/5 sticky top-0" id="blog-sidebar">
+        <aside class="w-full lg:w-1/5 sticky top-0" id="blog-sidebar">
             <div class="sticky top-8">
                 <h3 class="text-md font-bold capitalize pl-2 mb-4">Share artikel ini</h3>
                 <div class="flex gap-2 mb-8">
@@ -120,6 +120,6 @@ data() {
 
 <style>
     .nuxt-link-exact-active {
-        color: #f00;
+        color: green;
     }
 </style>

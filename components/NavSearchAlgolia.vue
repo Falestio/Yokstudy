@@ -2,12 +2,13 @@
   <div>
     <label for="search-modal">
         <div class="flex-none">
-            <div class="py-2 px-2 border-gray-200 border-2 rounded-md flex justify-center items-center gap-4 
-                        cursor-pointer hover:bg-base-200 mr-8">
+            <div class="md:py-2 md:px-2 py-1 px-1 border-gray-200 border-2 rounded-md md:flex justify-center items-center gap-4 
+                        cursor-pointer hover:bg-base-200 mr-8 hidden">
                 <i class="uil uil-search"></i>
                 <p>Cari Apa saja..</p>
                 <kbd class="kbd kbd-xs">Ctrl + K</kbd>
             </div>
+            <i class="uil uil-search md:hidden icon"></i>
         </div>
     </label> 
         <input type="checkbox" id="search-modal" class="modal-toggle" @click="showSearch()"> 
